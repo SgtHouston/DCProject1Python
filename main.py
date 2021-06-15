@@ -20,6 +20,7 @@
 # 17. Collision Detection for Enemy/Player-space
 # 18. Game over message
 # 19. High Score Board json added
+# TODO difficulty adjusted via speed increase
 # TODO enemy classes
 # TODO bullet classes
 # D = SqRt((x2 - x1)**2 + (y2 - y1)**2)
@@ -101,7 +102,7 @@ for i in range(num_of_enemies):
     enemyX.append(random.randint(0, 736))
     enemyY.append(random.randint(20, 150))
     # how many pixels the enemy will move per loop on the x-axis.
-    enemyX_change.append(3)
+    enemyX_change.append(9)
     # enemy will not only move on the x-axis, but will come down towards 
     # the player on the y-axis once it hits a set border.  To enable this, 
     # the enemy will also have an enemyY_change, unlike the player
@@ -207,12 +208,12 @@ while running:
                 # when left arrow key is pressed, playerX_change 
                 # variable moves player n pixels toward origin on the 
                 # x-axis.
-                playerX_change = -5
+                playerX_change = -8
             if event.key == pygame.K_RIGHT:
                 # when right arrow is pressed, playerX_change variable 
                 # moves player n pixels away from the origin on the 
                 # x-axis
-                playerX_change = 5 
+                playerX_change = 8 
             if event.key == pygame.K_SPACE:
                 # when spacebar is pressed, fire bullet function is 
                 # called and bullet state is switched to fire. 
@@ -266,7 +267,7 @@ while running:
         # When X-value has decreased all the way to zero, begin 
         # increasing it, sending the enemy the other direction 
         # with every loop 
-            enemyX_change[i] = 5
+            enemyX_change[i] = 9
             enemyY[i] += enemyY_change[i]
         
         # if enemy hits right wall 
@@ -274,7 +275,7 @@ while running:
         # When X-value has increased to 736, begin 
         # decreasing it by the movement speed value, sending the 
         # enemy the other direction with every loop
-            enemyX_change[i] = -5
+            enemyX_change[i] = -9
             enemyY[i] += enemyY_change[i]
 
         # Check for Collision with every enemy
