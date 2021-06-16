@@ -13,6 +13,11 @@ weapon capable of penetrating the previously impervious UFO forcefields and dest
 in one hit!  They dubbed this weapon the "Big Bang" and attached it to our 
 fastest, most technologically advanced spacefighter jet.
 
+![Your Spacefighter Jet](fighter.png)
+
+![The Big Bang Laser Cannon](cannon.png)
+
+
 Then started the search ... the search for the mentally-strongest, smartest, most capable 
 pilot on the planet Earth.  
 
@@ -31,3 +36,5 @@ Right Arrow - Moves the players spaceship to the right
 SpaceBar - Shoot laser projectile at enemy UFO spaceships
 
 Quit - Hit 'x' button in top-right corner of play window
+
+
