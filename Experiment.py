@@ -21,8 +21,7 @@
 # 18. 'Game Over' message
 # 19. High Score Board json added
 # TODO Difficulty Menu using speeds
-# TODO enemy classes
-# TODO bullet classes
+# TODO enemy Classes
 # D = SqRt((x2 - x1)**2 + (y2 - y1)**2)
 
 
@@ -87,6 +86,7 @@ enemyY = []
 enemyX_change = []
 enemyY_change = []
 num_of_enemies = 6 
+# Give it a face
 for i in range(num_of_enemies):
     for n in range(6):
         if n <= 1:
@@ -95,14 +95,15 @@ for i in range(num_of_enemies):
             enemyImg.append(pygame.image.load('enemy2.png'))
         if n > 4 and n < 6:
             enemyImg.append(pygame.image.load('enemy3.png'))
-
+    # Give it a location
     # # randomize x,y axis values by importing random module and
     # providing a range of coordinates that represent the borders on the 
     # x-axis and the other side of the board on the y.
     enemyX.append(random.randint(0, 736))      
     enemyY.append(random.randint(20, 150))
     # how many pixels the enemy will move per loop on the x-axis.
-    enemyX_change.append(10)
+    
+    enemyX_change.append(8)
     # enemy will not only move on the x-axis, but will come down towards 
     # the player on the y-axis once it hits a set border.  To enable this, 
     # the enemy will also have an enemyY_change, unlike the player
@@ -169,10 +170,10 @@ def game_over_text():
     game_over = game_over_font.render("G A M E  O V E R", True, (255, 255, 255))
     if high_score > score_value:
         high_score_display = high_score_font.render(f"H I G H  S C O R E: {high_score}", True, (255, 255, 255))
-        screen.blit(high_score_display, (255, 450))
+        screen.blit(high_score_display, (235, 450))
     elif score_value > high_score:
-        high_score_display = high_score_font.render(f"N E W  H I G H  S C O R E: {score_value}", True, (255, 255, 255))
-        screen.blit(high_score_display, (200, 450))
+        high_score_display = high_score_font.render(f"N E W  H I G H  S C O R E :  {score_value}", True, (255, 255, 255))
+        screen.blit(high_score_display, (190, 450))
     # then blit it on the screen 
     screen.blit(game_over, (150, 250))
     
@@ -267,7 +268,7 @@ while running:
         # When X-value has decreased all the way to zero, begin 
         # increasing it, sending the enemy the other direction 
         # with every loop 
-            enemyX_change[i] = 10
+            enemyX_change[i] = 8
             enemyY[i] += enemyY_change[i]
         
         # if enemy hits right wall 
@@ -275,7 +276,7 @@ while running:
         # When X-value has increased to 736, begin 
         # decreasing it by the movement speed value, sending the 
         # enemy the other direction with every loop
-            enemyX_change[i] = -10
+            enemyX_change[i] = -8
             enemyY[i] += enemyY_change[i]
 
         # Check for Collision with every enemy

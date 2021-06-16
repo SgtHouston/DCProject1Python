@@ -21,8 +21,7 @@
 # 18. Game over message
 # 19. High Score Board json added
 # TODO difficulty adjusted via speed increase
-# TODO enemy classes
-# TODO bullet classes
+
 # D = SqRt((x2 - x1)**2 + (y2 - y1)**2)
 
 
@@ -168,13 +167,13 @@ def game_over_text():
     # Pass in string to display, TRUE,  and the color font. 
     game_over = game_over_font.render("G A M E  O V E R", True, (255, 255, 255))
     if high_score > score_value:
-        high_score_display = high_score_font.render(f"H I G H  S C O R E: {high_score}", True, (255, 255, 255))
-        screen.blit(high_score_display, (255, 450))
+        high_score_display = high_score_font.render(f"H I G H  S C O R E : {high_score}", True, (255, 255, 255))
+        screen.blit(high_score_display, (240, 450))
     elif score_value > high_score:
-        high_score_display = high_score_font.render(f"N E W  H I G H  S C O R E: {score_value}", True, (255, 255, 255))
-        screen.blit(high_score_display, (200, 450))
+        high_score_display = high_score_font.render(f"N E W  H I G H  S C O R E: {score_value} !", True, (255, 255, 255))
+        screen.blit(high_score_display, (180, 450))
     # then blit it on the screen 
-    screen.blit(game_over, (150, 250))
+    screen.blit(game_over, (140, 250))
     
 
 # Game Loop
