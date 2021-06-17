@@ -37,6 +37,6 @@ Right Arrow - Moves the players spaceship to the right
 
 SpaceBar - Shoot laser projectile at enemy UFO spaceships
 
-Quit - Hit 'x' button in top-right corner of play window
+Quit - Hit 'x' button in top corner of play window
 
 
