@@ -32,7 +32,9 @@ Hope for the future of humanity rests on your shoulders!
 Game Controls
 
 Left Arrow - Moves the players spaceship to the left
+
 Right Arrow - Moves the players spaceship to the right
+
 SpaceBar - Shoot laser projectile at enemy UFO spaceships
 
 Quit - Hit 'x' button in top-right corner of play window
