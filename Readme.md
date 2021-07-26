@@ -34,15 +34,15 @@ have breached our dimension.
 
 Hope for the future of humanity rests on your shoulders!  
 
-
+<pre>
 Game Controls
 
-Left Arrow - Moves the players spaceship to the left
+Left Arrow - Moves the players' spaceship to the left
 
-Right Arrow - Moves the players spaceship to the right
+Right Arrow - Moves the players' spaceship to the right
 
-SpaceBar - Shoot laser projectile at enemy UFO spaceships
+SpaceBar - Shoot "Big Bang" laser projectile at enemy UFO spaceships
 
 Quit - Hit 'x' button in top corner of play window
-
+</pre>
 
