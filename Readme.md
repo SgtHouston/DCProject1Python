@@ -46,3 +46,6 @@ SpaceBar - Shoot "Big Bang" laser projectile at enemy UFO spaceships
 Quit - Hit 'x' button in top corner of play window
 </pre>
 
+Built by Chris H. w/Pycharm Library and Python 
+
+Enjoy!
